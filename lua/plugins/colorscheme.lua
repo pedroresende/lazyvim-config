@@ -1,12 +1,17 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+  "EdenEast/nightfox.nvim",
+  config = function()
+    require("nightfox").setup({
+      options = {
+        transparent = true, -- Set to true if you want a transparent background
+        styles = {
+          comments = "italic",
+          keywords = "bold",
+          functions = "italic,bold",
+          strings = "NONE",
+          variables = "NONE",
+        },
       },
-    },
-  },
+    })
+  end,
 }
