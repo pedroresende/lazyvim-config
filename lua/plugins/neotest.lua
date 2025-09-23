@@ -6,6 +6,7 @@ return {
     "antoinemadec/FixCursorHold.nvim",
     "nvim-treesitter/nvim-treesitter",
     "thenbe/neotest-playwright",
+    "markemmons/neotest-deno",
     dependencies = "nvim-telescope/telescope.nvim",
   },
   config = function()
@@ -17,6 +18,7 @@ return {
             enable_dynamic_test_discovery = true,
           },
         }),
+        require("neotest-deno"),
       },
     })
   end,
