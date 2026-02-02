@@ -1,6 +1,6 @@
 vim.g.prettier.config.semi = false
 vim.g.prettier.config.singleQuote = true
-vim.g.prettier.config.trailingComma = "all"
+-- vim.g.prettier.config.trailingComma = "all"
 vim.g.prettier.config.bracketSpacing = true
 vim.g.prettier.config.jsxBracketSameLine = true
 vim.g.prettier.config.arrowParens = "always"
